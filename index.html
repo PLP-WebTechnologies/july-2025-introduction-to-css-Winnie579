@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Shopping List</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🛒 Smart Shopping List</h1>
+    <p>Track items, estimate costs, and budget like a pro.</p>
+    <label class="theme-toggle">
+      <input type="checkbox" id="theme-switch" />
+      <span>🌗 Toggle Theme</span>
+    </label>
+  </header>
+
+  <nav>
+    <button>All</button>
+    <button>To Restock</button>
+    <button>Available</button>
+    <button class="add-btn">➕ Add Item</button>
+  </nav>
+
+  <section class="progress-bar">
+    <div class="progress-fill" style="width: 40%;"></div>
+    <span>2 of 5 items available</span>
+  </section>
+
+  <main class="list-container">
+    <section class="item-card produce essential">
+      <input type="checkbox" id="apples" />
+      <label for="apples">🍎 Apples</label>
+      <span class="tag">Produce</span>
+      <span class="priority">Essential</span>
+      <p class="note">Prefer organic</p>
+      <p class="price">Est. KSh 150</p>
+    </section>
+
+    <section class="item-card dairy optional">
+      <input type="checkbox" id="milk" />
+      <label for="milk">🥛 Milk</label>
+      <span class="tag">Dairy</span>
+      <span class="priority">Optional</span>
+      <p class="note">Low-fat</p>
+      <p class="price">Est. KSh 120</p>
+    </section>
+
+    <section class="item-card grains essential">
+      <input type="checkbox" id="bread" checked />
+      <label for="bread">🍞 Bread</label>
+      <span class="tag">Grains</span>
+      <span class="priority">Essential</span>
+      <p class="note">Whole wheat</p>
+      <p class="price">Est. KSh 100</p>
+    </section>
+
+    <section class="item-card protein bulk">
+      <input type="checkbox" id="eggs" />
+      <label for="eggs">🥚 Eggs</label>
+      <span class="tag">Protein</span>
+      <span class="priority">Bulk</span>
+      <p class="note">1 dozen</p>
+      <p class="price">Est. KSh 180</p>
+    </section>
+
+    <section class="item-card grains bulk">
+      <input type="checkbox" id="rice" checked />
+      <label for="rice">🍚 Rice</label>
+      <span class="tag">Grains</span>
+      <span class="priority">Bulk</span>
+      <p class="note">5kg bag</p>
+      <p class="price">Est. KSh 600</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Total Estimated Cost: KSh 1150</p>
+    <p>© 2025 Budget Buddy</p>
+  </footer>
+</body>
+</html>
